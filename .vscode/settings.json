@@ -1,3 +1,4 @@
 {
-  "python.pythonPath": "C:\\Users\\dixit\\.virtualenvs\\lcodev-6D5_AsBX\\Scripts\\python.exe"
+  "python.pythonPath": "C:\\Users\\dixit\\.virtualenvs\\lcodev-6D5_AsBX\\Scripts\\python.exe",
+  "python.formatting.provider": "autopep8"
 }

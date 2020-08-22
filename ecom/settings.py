@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 
     'api.apps.ApiConfig',
-    'api.category'
+    'api.category',
+    'api.product',
+    # 'api.user',
 ]
 
 MIDDLEWARE = [
@@ -132,6 +134,8 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# AUTH_USER_MODEL = "user.CustomUser"
+
 CORS_ORIGIN_ALLOW_ALL = True
 
 REST_FRAMEWORK = {
@@ -142,7 +146,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication'
     ],
-  
+
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
