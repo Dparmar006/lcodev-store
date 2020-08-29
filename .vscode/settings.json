@@ -1,4 +1,7 @@
 {
   "python.pythonPath": "C:\\Users\\dixit\\.virtualenvs\\lcodev-6D5_AsBX\\Scripts\\python.exe",
-  "python.formatting.provider": "autopep8"
+  "python.formatting.provider": "autopep8",
+  "python.linting.pylintEnabled": true,
+  "python.linting.mypyEnabled": false,
+  "python.linting.enabled": true
 }

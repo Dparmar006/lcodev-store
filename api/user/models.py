@@ -16,5 +16,5 @@ class CustomUser(AbstractUser):
     gender = models.CharField(max_length=10, blank=True, null=True)
 
     session_token = models.CharField(max_length=10, default=0)
-    created_at = models.DateTimeField(auto_now_add=False)
-    updated_at = models.DateTimeField(auto_now=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
