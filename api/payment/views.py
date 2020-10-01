@@ -31,7 +31,7 @@ def validate_user_session(id, token):
 def generate_token(request, id, token):
     if not validate_user_session(id, token):
         return JsonResponse({'error': 'Invalid session, Please login again !'})
-    return JsonResponse({'cleint_token': gateway.client_token.generate(), 'success': 'True'})
+    return JsonResponse({'client_token': gateway.client_token.generate(), 'success': 'True'})
 
 
 @csrf_exempt
